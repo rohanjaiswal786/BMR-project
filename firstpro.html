@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset=ÜTF-8">
+    <title>Documet</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<script type="text/javascript">
+    function BMI() {
+        var h=document.getElementById('h').value;
+        var w=document.getElementById('w').value;
+        var bmi=w/(h/100*h/100);
+        var bmio=(bmi.toFixed(2));
+
+        document.getElementById("result").innerHTML="Your BMI is " + bmio;
+    }
+</script>
+<body>
+    <section class="hi_image">
+        <div class="hi_wrapper">
+            <h1>WORRIED ABOUT YOUR WEIGHT ?</h1>
+			<h2>BMI Calculator</h2>
+			<p class="text">Height</p>
+			<input type="text" id="h">
+			<p class="text">Weight</p>
+			<input type="text" id="w">
+			<p id="result"></p>
+			<button id="btn" onClick="BMI()">Calculate</button>
+			<p id="info">Please enter height [cm] and weight [kg]<br>
+        
+
+                Less than 18.5- Underweight<br>
+            
+                18.5 to 24.9 - Healthy weight<br>
+            
+                25 to 29.9 -Overweight<br>
+            
+                30 or higher -Obese
+            </p>
+		</div>
+    </section>
+
+</body>
+</html>
